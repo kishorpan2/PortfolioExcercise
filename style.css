@@ -1,11 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* body *{
+    margin: 2px;
+    border: 1px solid red
+    } */
 .container{
-    width:1000px;
+    width:970px;
     min-height:500px;
     margin:0px auto;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 .header{
-    width:994px;
+    width:970px;
     min-height:50px;
     display: flex;
     align-items: baseline;
@@ -16,59 +25,63 @@
     font-family: comic sans ms;
     font-size: 30px;
     font-weight: 800;
+    margin-left:25px;
 }
 #logo{
     font-size: 20px;
     font-weight: 800;
-}
-
-.main-top{
-    width: 994 px;
-    min-height: 100px;
-    display:flex;
-    margin:0px;
-}
-.main-top-right{
-    background-color: rgb(237,231,236);
-    margin: 15px;
-    padding: 10px;
-}
-.main-top-left{
-    border:2px solid rgb(192,192,192);
-    margin: 15px;
-}
-.main-bottom{
-    width:1200px;
-    min-height: 300px;
-    display:flex;
-
-}
-.main-top-left img{
-    width: 450px;
-}
-.main-bottom-left,.main-bottom-mid,.main-bottom-right{
-    width:312px;
-    min-height: 400px;
-    border:2px solid black; 
-}
-.main-top-left,.main-top-right{
-    width:490px;
-    min-height: 100px;
+    margin-right:30px;
 }
 .main{
     min-height:400px;
     width: 994px;
     background-color: rgb(51,33,39); 
     padding:20px;
-
+    
 }
-.footer{width:994px;
-    min-height:80px;
+
+.main-top{
+    width: 970 px;
+    min-height: 100px;
+    display:flex;
+    margin:0px;
+}
+.main-top-left,.main-top-right{
+    width:437px;
+    margin-left:22px;
+    min-height: 100px;
+}
+.main-top-left{
+    border:2px solid rgb(192,192,192);
+}
+.main-top-left img{
+    width: 420px;
+}
+.main-top-right{
+    background-color: rgb(237,231,236);
+    
+    padding: 10px;
+}
+
+.main-top-right a{
+    font-family: sans-serif;
+    color:black
+}
+.main-top-right p{
+    margin-bottom: 12px;
 }
 .main-bottom{
-    display:flex; 
+    width:970px;
+    min-height: 300px;
+    display:flex;
     padding:20px;
     justify-content:flex-start ;
+
+}
+.main-bottom-left,.main-bottom-mid,.main-bottom-right{
+    width:300px;
+    min-height: 400px;
+    border:2px solid black; 
 }
 
 .main-bottom-left{
@@ -98,57 +111,77 @@
     background-color:rgb(152,150,160);
     padding-bottom: 20px;
 }
-.languages1 img, .languages2 img{
+.languages1{
+    text-align: center;
+}
+.languages1 img{
     width:55px;
 }
-.footer p{display:flex;
-    justify-content: center
-
+.languages1 button {
+    font-size: larger;
+    border-radius:8px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    background-color:rgb(64,125,97);   
 }
+
 .main-bottom-img{
-    width:305px;
+    width:290px;
 }
 .main-bottom-common{
     height: 400px;
     margin:7px;
 }
+.main-bottom-common p{
+    margin:9px;
+    text-align:justify;
+}
 .stack{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
 }
 .stack li{
     display:inline;
 }
 h3, h4{
-	background: linear-gradien(rgb(152,150,160),rgb(145,143,155),rgb(135,134,147));
+	background: linear-gradient(rgb(152,150,160),rgb(145,143,155),rgb(135,134,147));
 	color: rgb(253,251,246);
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
-.languages1 button {
-    text-align:center;
-    border-radius:8px;
-    margin-top: 20px;
-    margin-bottom: 13px;
-    background-color:rgb(64,125,97);
-    
+
+footer {
+    background-color: rgb(248,248,248);
+    text-align: center;
+    justify-content: center;
+    width:994px;
+    min-height:80px;
 }
 footer ul li img{
     width: 25px;
     vertical-align: middle; 
 }
 footer ul li{
-    display: inline;
-    align-items: baseline;
+    list-style-type: none;
+    align-self: baseline;
 }
-footer {
-    background-color: rgb(248,248,248);
-    text-align: center;
-    justify-content: center;
+footer ul{
+    margin-top:12px;
+    display:flex;
+    align-items: baseline;
+    justify-content:center;
 }
 footer a{
     font-family: sans-serif;
     font-style: italic;
     color:black
 }
+.footer p{display:flex;
+    justify-content: center;
+}
+
